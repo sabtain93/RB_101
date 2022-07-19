@@ -1,0 +1,160 @@
+# a method that returns the sum of two integers
+
+# Pseudo code
+
+	- take two intergers as input
+	- intialize a variable 
+	- apply the arithematic operation of sum
+	- save the sum of the two integers in variable initialized
+	- print the variable which holds the value of the sum of the two integers
+# Formal Pseudo code
+	START
+
+# Given two integers x and Y
+
+	SET sum = x + y
+
+	PRINT sum
+
+	END
+
+//////////////////////////////////////////////////////////////////////////////
+
+# a method that takes an array of strings, and returns a string that is all those strings concatenated together.
+
+# Pseudo code
+	
+	- Given an array of strings
+	- assing the first element of the array to a variable
+	- iterate over the array based on the length of the array
+	- save each value of the array concatinated to the previous one which is saved in the variable
+	- return the final string saved in the variable
+
+# Formal Pseudo code
+
+	START
+
+	# Given an array of strings
+
+	SET new_string 
+
+	SET iterator = 0
+
+	while iterator <= length of array
+
+		SET new_string = new_string concat on the array sapce at "iterator"
+
+		iterator = iterator + 1
+
+		Print new_string
+
+		END
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+# a method that takes an array of integers, and returns a new array with every other element from the original array, starting with the first element.
+
+
+# Pesudo code
+	
+	- given array of integers
+	- iterate over the array for the length of the array
+	- set a var array to save the array
+	- save the integer with the index value starting from zero and leave out the next sapce value
+	- return the save array
+
+# FORMAL Pesudo code
+
+	Start
+
+	# Given an array of integers
+
+	SET new_array to empty array
+	Iterator1 = 0
+
+	Iterator2 =0
+
+	while Iterator <= length of the array
+		SET new_array at "Iterator2" = array sapce value at "Iterator1"
+
+		Iterator1 = Iterator1 + 2
+
+	PRINT new_array
+	END
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+# a method that determines the index of the 3rd occurrence of a given character in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the method should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return nil.
+
+# Pseudo code
+
+	-Given a string and the char
+	-Set an empty array 
+	-Set a varibale num to save the index
+	-Split the string and save into the array
+	-Iterate over the array and compare each entry with the char
+	-if the char is the same save the index number in variable 
+	-if the char is diiferent onto next iteration
+	-at the end of the iteration return num if num is >= 3 
+
+# Formal Pseudo code
+
+	Start
+
+	# Given an String and char
+
+	SET new_array = split the string into single char
+	SET iterator = 0
+
+	SET num = 0
+
+	while iterator <= lenghth of new_array
+
+		if new_array value at space "iterator" = char
+			num = num + 1
+			
+		break if num = 3
+		
+	if num = 3
+		PRINT Iterator
+	else
+		PRINT nil
+
+	END
+////////////////////////////////////////////////////////////////////////////////////////////
+a method that takes two arrays of numbers and returns the result of merging the arrays. The elements of the first array should become the elements at the even indexes of the returned array, while the elements of the second array should become the elements at the odd indexes. For instance:
+
+
+# Pesudo code
+	
+	START
+	
+	# given two arrays array 1 and array 2
+
+	SET new_array to empty
+
+	SET Iterator1 = 0
+
+	SET Iterator2 = 0
+
+	SET Iterator3 = 0
+
+	SET Iterator4 = 1
+
+	While Iterator1 <= length of array 1
+
+		SET new_array at space value "Iterator3" = array 1 at space value "Iterator1"
+
+		Iterator1 = Iterator + 1
+		Iterator3 = Iterator3 + 2
+
+	while Iterator2 <= length of array 2
+
+		SET new_array at space value "iterator4" = array 2 at space value "Iterator2"
+
+		Iterator2 = Iterator2 + 1
+		Iterator4 = Iterator4 + 2
+
+	PRINT new_array
+
+	END
+///////////////////////////////////////////////////////////////////////////////////////////////
