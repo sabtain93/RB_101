@@ -1,0 +1,10 @@
+
+
+welcome: 'welcome to the calculator, please enter your name'
+valid_name: 'Make sure to enter a valid name'
+1_st: 'Enter the first number: '
+2_nd: 'Enter the second number: '
+valid_number: 'Enter a valid number'
+valid_oper: 'Enter a valid operation'
+repeat: 'Would yoy like to perform another operation? (Y/N): ' 
+goodbye: 'Thank you for using the calculator'
