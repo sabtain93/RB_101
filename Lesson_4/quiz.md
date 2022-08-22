@@ -1,6 +1,6 @@
 **Quiz 4 revision of**
 
-***revision of wrong question and reasons why was that option wrong***
+***Revision of wrong question and reasons why was that option wrong***
 
 ***What happens if we try to initialize a Hash that contains duplicate keys?***
 
@@ -97,4 +97,10 @@ end
 
 Answer:
 =======
-- 
+- The above code is wrong as the usable lead will not conatin the desired result.
+- As the reject method would retun all the value for which the block returns either false or 
+  nil value.
+- but in the above code the && condition if replaced by || condition would replace the legacy code 
+  accurately.   
+
+# Heading 1
