@@ -9,11 +9,4 @@ end
 ```
 # What's happening in this, seemingly simple, piece of code? Take it apart and try to describe every interaction with precision.
 
-- In the above code an `Array#each` method is called on an `Array` object which is a multidimensional array `[[1, 2], [3, 4]]` 
-- In each iteration each sub array is assigned to the `arr` variable.
-- The `Array#first` method is called on `arr` variable which returns the 0 index element
-- of the array so the return value is `1` and `3` respectively.
-- `puts`  outputs the string representation of the integers
-- `puts` returns `nil`, since this is the last evaluated statement within the block
-- so the return value of the block is nil.
-- As `Array#each` does not analyze the return value of the block and return the caller Array object which is `[[1, 2], [3, 4]]`.
+the `each` method is called on the nested array `[[1, 2], [3, 4]]`. Each array is passed into the block on each iteration and assigned to block's local variable `arr`. Within the block `Array#first` method is invoked on `arr`. The `Array#first` method returns the `0` index element of the current array, which in this case will be the integers `1` and `3` respectively. `puts` method is invoked and the return value of `arr.first` is passed to it as an argument. `puts` will output `1` and `3` to the console and returns `nil` which is the blocks return value, as this is the last statement evaluated by the the block. `each` method does not care for the blocks return value and returns the calling collection which in this case is `[[1, 2], [3, 4]]`.

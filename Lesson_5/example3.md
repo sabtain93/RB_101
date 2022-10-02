@@ -6,18 +6,5 @@ end
 ```
 # question: Map out a detailed breakdown for the above example using the same approach as the previous two examples. What do you think will be returned and what will be the side-effects?
 
-- `Array#map` method is called on a multidimensional array.
-- Each sub array is assigned to the local variable of the block `arr`
-- The `Array#first` method is called on the `arr` variable which returns the `0` index
-  element of the subarray respectively.
-- The `puts` method is called on the return value of `arr.first` . which is `1` and `3`
-  respectively.
-- The puts method outputs the string representation of the integers returned by `arr.first`
-  and returns `nil`
-- In the last line `Array#first` method is called on `arr` which returns the 0 index element
-  of the subarray which are `1` and `3` respectively.
-- Sine the `arr.first` is the last line evaluated in the block so the `1` and `3` are the 
-  return value of the block.
-- As `Array#map` method analyzes the return value of the block and performs transformation 
-  based on the return value of the block.
-- So the return value of map is a new array `# => [1,3]`.
+`map` method is invoked on the nested array `[[1, 2], [3, 4]]`. Each nested array is passed into the block and is assigned to the block's local variable `arr`. inside the block on `line 3` `puts` method is invoked and the return value of `arr.first` is passed to it as an argument. `Array#first` method is returns the `0` index element the current array which in this case will be the integer `1` and `3` respectively. Then `puts` outputs the string representation of the integer and returns `nil`. On `line 4` again `Array#first` method is called on `arr` which will return integers `1` and `3` respectively and this will also be the blocks return value as it's the last statement evaluated inside the block. `map` evaluates the return value of the block and performs transformation according to it and so `map` will return a new array `[1, 3]`.
+
